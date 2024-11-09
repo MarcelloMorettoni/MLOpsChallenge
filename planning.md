@@ -1,6 +1,6 @@
 # Project Overview
 
-Day 1 Plan
+**Day 1 Plan**
 Morning: Model Development
 Set Up Development Environment
 
