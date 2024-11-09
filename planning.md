@@ -1,6 +1,6 @@
 # Project Overview
 
-**Day 1 Plan**
+# Day 1 Plan
 Morning: Model Development
 Set Up Development Environment
 
@@ -71,7 +71,9 @@ Version Control
 Initialize Git Repository:
 Commit your code and Dockerfile.
 Write a clear README.md explaining how to run the application.
-Day 2 Plan
+
+# Day 2 Plan
+
 Morning: MLOps Workflow Setup
 Implement MLflow for Model Tracking
 
