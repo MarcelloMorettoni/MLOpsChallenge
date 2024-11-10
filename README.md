@@ -12,3 +12,8 @@ Middleware: Node-RED acting as the API layer to send commands to the robotic arm
 Model: A computer vision model that detects blue cubes in real-time.
 MLOps Workflow: Automate model training, versioning, deployment, and monitoring.
 
+# Dataset:
+I used Kaggle, since I had only two days:
+[link] https://www.kaggle.com/datasets/saikatpanda/cubes-craters-and-cylinder/data
+
+
