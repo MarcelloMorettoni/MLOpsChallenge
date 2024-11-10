@@ -13,7 +13,7 @@ Model: A computer vision model that detects blue cubes in real-time.
 MLOps Workflow: Automate model training, versioning, deployment, and monitoring.
 
 # Dataset:
-I used Kaggle, since I had only two days:
-[link] https://www.kaggle.com/datasets/saikatpanda/cubes-craters-and-cylinder/data
+I used a dataset from Kaggle, since I had only two days:
+https://www.kaggle.com/datasets/saikatpanda/cubes-craters-and-cylinder/data
 
 
