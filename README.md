@@ -17,4 +17,8 @@ Bonus: Chatbot to upload images and test the models
 I used a dataset from Kaggle, since I had only two days:
 https://www.kaggle.com/datasets/saikatpanda/cubes-craters-and-cylinder/data
 
+# Hardware:
+The robotic arm used is the Adeept 5-DOF:
+https://www.adeept.com/robotic-arm-uno_p0118.html
+
 
