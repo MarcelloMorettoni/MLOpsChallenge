@@ -11,7 +11,7 @@ Hardware: Robotic arm controlled via serial communication.
 
 Middleware: Node-RED acting as the API layer to send commands to the robotic arm.
 
-Model: A computer vision model that detects blue cubes in real-time.
+Model: A computer vision model that detects cubes in real-time.
 
 MLOps Workflow: Automate model training, versioning, deployment, and monitoring.
 
