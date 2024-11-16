@@ -1,11 +1,3 @@
-/***********************************************************
-File name: Potentiometer_control.ino
-Description: Potentiometer controls the rotation angle of the servo.
-Website: www.adeept.com
-E-mail: support@adeept.com
-Author: Tomp
-Date: 2020/12/12
-***********************************************************/
 #include <Servo.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -18,6 +10,7 @@ Servo servo2;//create servo object to control a servo
 Servo servo3;//create servo object to control a servo
 Servo servo4;//create servo object to control a servo
 Servo servo5;//create servo object to control a servo
+
 //The following can be modified according to your specific needs
 int dataServo1 = 90; // Servo 1 rotation range(dataServo1=0~180)
 int dataServo2 = 90; // Servo 2 rotation range(dataServo2=0~180) 
@@ -153,24 +146,6 @@ void loop()
   display.print("NEBUL");
   //Began to show
   display.display();
-//  servo1.write(dataServo1+dirServo1Offset);//goes to dataServo1 degrees 
-//  servo2.write(dataServo2+dirServo2Offset);//goes to dataServo2 degrees 
-//  servo3.write(dataServo3+dirServo3Offset);//goes to dataServo3 degrees 
-//  servo4.write(dataServo4+dirServo4Offset);//goes to dataServo4 degrees 
-//  servo5.write(dataServo5+dirServo5Offset);//goes to dataServo5 degrees 
-
-//  val1 = map(analogRead(0), 0, 1023, 0, 180);  
-//  val2 = map(analogRead(1), 0, 1023, 0, 180);  
-//  val3 = map(analogRead(2), 0, 1023, 0, 180);  
-//  val4 = map(analogRead(3), 0, 1023, 0, 180);
-//  val5 = map(analogRead(6), 0, 1023, 35, 180);  
- 
-//  dataServo1 = val1;
-//  dataServo2 = val2;
-//  dataServo3 = val3;
-//  dataServo4 = val4;
-//  dataServo5 = val5;
-//  delay(50);//wait for 0.05second
 
   if(Serial.available()) {
     String data = Serial.readString();
