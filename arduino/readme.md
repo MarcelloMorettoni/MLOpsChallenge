@@ -1,1 +1,1 @@
-#arduino code folder for the robotice arm
+# Arduino code folder for the robotice arm
