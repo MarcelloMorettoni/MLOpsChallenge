@@ -1,1 +1,1 @@
-#folder for datasert / Yolov8
+# Folder for the datasert / Yolov8
