@@ -26,6 +26,5 @@ The robotic arm used is the Adeept 5-DOF:
 https://www.adeept.com/robotic-arm-uno_p0118.html
 
 # Installation instructions
-
-Kubeflow: docs/instructions/readme.md
+Docs are placed on docs/instructions
 
