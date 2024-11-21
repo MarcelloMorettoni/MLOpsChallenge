@@ -36,6 +36,7 @@ kubectl get nodes --show-labels | grep gpu.count
 Two approaches were checked:
 
 1 - JUJU
+
 2 - Manually / creating your own automation
 
 Due to my willing on learn, I first will deploy it MANUALLY ;)
