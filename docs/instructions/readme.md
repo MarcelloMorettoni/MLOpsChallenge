@@ -35,11 +35,11 @@ kubectl get nodes --show-labels | grep gpu.count
 
 Two approaches were checked:
 
-1 - JUJU
+1 - JUJU: https://charmhub.io/kubeflow
 
-2 - Manually / creating your own automation
+2 - Manually: Creating your own automation
 
-Due to my willing on learn, I first will deploy it MANUALLY ;)
+Due to my willing on learn, deployment was manually performed.
 
 Findings:
 
