@@ -49,7 +49,8 @@ Poprt forward works great:
 kubectl port-forward svc/istio-ingressgateway -n istio-system 8080:80 --address=0.0.0.0
 ```
 
-I had a problem with open files limit. It was missing a new limits config:
+I had a problem with open files limit. It was missing a new limits config that is in the documentation:
+https://www.kubeflow.org/docs/started/installing-kubeflow
 
 ```
 Linux kernel subsystem changes to support many pods
