@@ -5,7 +5,7 @@ import requests
 import time
 
 # Load your trained YOLOv8 model
-model = YOLO('./runs/detect/train/weights/best.pt')  # Replace 'best.pt' with the path to your model
+model = YOLO('../testflow/test_model/best.pt')  # Replace 'best.pt' with the path to your model
 
 # Open the default webcam
 cap = cv2.VideoCapture(0)
