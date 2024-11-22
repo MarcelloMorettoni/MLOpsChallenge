@@ -1,0 +1,5 @@
+[wsl2]
+# replace D:\\WSLDistri\\Kernel\\dist\\kernel-5.15.150.1
+# with your kernel location on windows
+# double backward slash for escaping is must
+kernel=D:\\WLS\\vmlinux
