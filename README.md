@@ -17,6 +17,8 @@ MLOps Workflow: Automate model training, versioning, deployment, and monitoring.
 
 Bonus: Chatbot to upload images and test the models 
 
+[![Overview](https://app.eraser.io/workspace/6xqUwgv57MCeYVlmlv3x/preview?elements=HdLl1pH2XP-BaavxLNlbCQ&type=embed)](https://app.eraser.io/workspace/6xqUwgv57MCeYVlmlv3x?elements=HdLl1pH2XP-BaavxLNlbCQ)
+
 # Dataset:
 I used a dataset from Kaggle, since I had only two days:
 https://www.kaggle.com/datasets/saikatpanda/cubes-craters-and-cylinder/data
