@@ -1,0 +1,426 @@
+[
+    {
+        "id": "1cca0d3f09ee73cf",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1ce3a80194a79ef2",
+        "type": "serial-port",
+        "name": "Robotic Arm",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "\\n",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "dfa28afaae2e0469",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7a3ee52f66c51620",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "3b3595615d5237d2",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "dfa28afaae2e0469",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d7fe034713815fe3",
+        "type": "debug",
+        "z": "1cca0d3f09ee73cf",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 510,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "6209f84de635f29c",
+        "type": "inject",
+        "z": "1cca0d3f09ee73cf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dbbb3b7e96d0961e",
+        "type": "serial out",
+        "z": "1cca0d3f09ee73cf",
+        "name": "",
+        "serial": "1ce3a80194a79ef2",
+        "x": 850,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "9832db37bc8b6281",
+        "type": "ui_button",
+        "z": "1cca0d3f09ee73cf",
+        "name": "",
+        "group": "3b3595615d5237d2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "YES",
+        "tooltip": "",
+        "color": "RED",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "S",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "dbbb3b7e96d0961e",
+                "d7fe034713815fe3"
+            ]
+        ]
+    },
+    {
+        "id": "cb7db3170af20bd6",
+        "type": "ui_button",
+        "z": "1cca0d3f09ee73cf",
+        "name": "",
+        "group": "3b3595615d5237d2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "NO",
+        "tooltip": "",
+        "color": "BLUE",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "D",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "dbbb3b7e96d0961e",
+                "d7fe034713815fe3"
+            ]
+        ]
+    },
+    {
+        "id": "5628c3d19a9d843c",
+        "type": "ui_button",
+        "z": "1cca0d3f09ee73cf",
+        "name": "",
+        "group": "3b3595615d5237d2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "GREEN",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "R",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 220,
+        "wires": [
+            [
+                "dbbb3b7e96d0961e",
+                "d7fe034713815fe3"
+            ]
+        ]
+    },
+    {
+        "id": "da9c157f5bbb19e9",
+        "type": "ui_button",
+        "z": "1cca0d3f09ee73cf",
+        "name": "",
+        "group": "3b3595615d5237d2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Calibrate",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "P",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 400,
+        "y": 280,
+        "wires": [
+            [
+                "dbbb3b7e96d0961e",
+                "d7fe034713815fe3"
+            ]
+        ]
+    },
+    {
+        "id": "4eb3c0c85c0b3d49",
+        "type": "ui_button",
+        "z": "1cca0d3f09ee73cf",
+        "name": "",
+        "group": "3b3595615d5237d2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Test",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "T",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 80,
+        "wires": [
+            [
+                "dbbb3b7e96d0961e",
+                "d7fe034713815fe3"
+            ]
+        ]
+    },
+    {
+        "id": "d993105f4f5b4e56",
+        "type": "http in",
+        "z": "1cca0d3f09ee73cf",
+        "name": "",
+        "url": "/LED",
+        "method": "get",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 80,
+        "y": 420,
+        "wires": [
+            [
+                "c00fe210223661a1"
+            ]
+        ]
+    },
+    {
+        "id": "090e073e04f6ed89",
+        "type": "http response",
+        "z": "1cca0d3f09ee73cf",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 740,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "c00fe210223661a1",
+        "type": "function",
+        "z": "1cca0d3f09ee73cf",
+        "name": "Response",
+        "func": "msg.payload=\"Hello, How Are you?\"\nmsg.statusCode=200\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 420,
+        "wires": [
+            [
+                "d7fe034713815fe3",
+                "090e073e04f6ed89"
+            ]
+        ]
+    },
+    {
+        "id": "776c67f767b4ba0a",
+        "type": "http in",
+        "z": "1cca0d3f09ee73cf",
+        "name": "",
+        "url": "/LEDPOST",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 720,
+        "wires": [
+            [
+                "355dd40b6ea6df6b"
+            ]
+        ]
+    },
+    {
+        "id": "355dd40b6ea6df6b",
+        "type": "function",
+        "z": "1cca0d3f09ee73cf",
+        "name": "Response",
+        "func": "// Extract the payload from msg object\nconst ledColor = msg.payload.LED;\n\n// Convert the color to its corresponding character\nlet ledChar;\nswitch (ledColor.toLowerCase()) {\n    case \"green\":\n        ledChar = 'D';\n        break;\n    case \"yellow\":\n        ledChar = 'T';\n        break;\n    case \"true\":\n        ledChar = 'S';\n        break;\n    case \"reset\":\n        ledChar = 'R';\n        break;\n        default:\n        ledChar = ''; // Handle unknown colors if needed\n        break;\n}\n\n// Set the result in msg.payload\nmsg.payload = ledChar;\n\n// Return the updated msg object\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 720,
+        "wires": [
+            [
+                "090e073e04f6ed89",
+                "d7fe034713815fe3",
+                "dbbb3b7e96d0961e"
+            ]
+        ]
+    }
+]

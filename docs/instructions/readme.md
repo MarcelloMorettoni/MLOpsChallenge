@@ -57,3 +57,10 @@ Linux kernel subsystem changes to support many pods
     sudo sysctl fs.inotify.max_user_instances=2280
     sudo sysctl fs.inotify.max_user_watches=1255360
 ```
+
+```
+(base) nibble@cybel:/mnt/c/Users/marce$ CLUSTER_IP=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.clusterIP}')
+(base) nibble@cybel:/mnt/c/Users/marce$ echo $CLUSTER_IP
+10.43.76.114
+```
+
