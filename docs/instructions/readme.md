@@ -64,3 +64,8 @@ Linux kernel subsystem changes to support many pods
 10.43.76.114
 ```
 
+# Install Node-red
+```
+sudo npm install -g --unsafe-perm node-red
+```
+
