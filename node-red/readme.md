@@ -1,4 +1,11 @@
- Helpful commands
+# Helpful commands
+
+Installation:
+```
+  554  apt install npm
+  555  npm install -g --unsafe-perm node-red
+```
+ 
 
 Installation of node-red detecting USB
  ```
@@ -46,3 +53,5 @@ usbipd: info: Using IP address 172.19.80.1 to reach the host.
 
 C:\Windows\System32>
 ```
+
+
